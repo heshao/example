@@ -63,9 +63,7 @@ public class User {
         if (id != null ? !id.equals(user.id) : user.id != null) return false;
         if (name != null ? !name.equals(user.name) : user.name != null) return false;
         if (adress != null ? !adress.equals(user.adress) : user.adress != null) return false;
-        if (qq != null ? !qq.equals(user.qq) : user.qq != null) return false;
-
-        return true;
+        return qq != null ? qq.equals(user.qq) : user.qq == null;
     }
 
     @Override
